@@ -1,0 +1,1 @@
+SELECT users.name as NAME, SUM(transactions.amount) AS BALANCE FROM transactions JOIN users ON users.account = transactions.account GROUP BY transactions.account HAVING SUM(transactions.amount) > 10000;
