@@ -1,0 +1,1 @@
+SELECT e1.name as employee FROM employee AS e1 JOIN employee AS e2 ON e1.managerId = e2.id WHERE e2.salary < e1.salary;
